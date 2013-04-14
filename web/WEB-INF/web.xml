@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <servlet>
+        <servlet-name>controllerServlet</servlet-name>
+        <servlet-class>controller.ControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>controllerServlet</servlet-name>
+        <url-pattern>/trans/*</url-pattern>
+    </servlet-mapping>
+
+
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <servlet-name>controllerServlet</servlet-name>
+    </filter-mapping>
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>filter.EncodingFilter</filter-class>
+    </filter>
+
+    <!--<context-param>-->
+    <!--<param-name>javax.faces.FACELETS_VIEW_MAPPINGS</param-name>-->
+    <!--<param-value>*.jspx</param-value>-->
+    <!--</context-param>-->
+
+    <!--<welcome-file-list>-->
+        <!--<welcome-file>index.jspx</welcome-file>-->
+    <!--</welcome-file-list>-->
+
+</web-app>

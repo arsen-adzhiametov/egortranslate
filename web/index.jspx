@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
+          xmlns="http://www.w3.org/1999/xhtml"
+          xmlns:fmt="http://java.sun.com/jsp/jstl/fmt"
+          version="2.0">
+
+    <jsp:directive.page contentType="text/html" pageEncoding="UTF-8" language="java"/>
+
+    <html>
+    <head><title>Simple jspx page</title></head>
+    <body>
+    <jsp:text>Введите слово</jsp:text>
+    <form method="post" action="/trans/late">
+        <input name="word" formenctype="UTF-8"></input>
+        <button>Перевести!</button>
+    </form>
+    <br></br>
+    ${wird}
+    </body>
+    </html>
+</jsp:root>
