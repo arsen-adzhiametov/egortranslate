@@ -11,6 +11,8 @@ import java.util.List;
 
 public class ControllerServlet extends HttpServlet {
 
+    //http://theonion.github.io/fartscroll.js/ - пердежка
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         String temp = new String(request.getParameter("word").getBytes("ISO-8859-1"), "UTF-8");
         char[] word = temp.toCharArray();

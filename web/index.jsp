@@ -2,19 +2,26 @@
 
 <html>
 <head>
-    <title>Page</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <title>ЕгорТранслейт</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
 </head>
 <body>
-<p>Hello Bootstrap!</p>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-Enter word
-<form method="get" action="/trans/late">
-    <input type="text" name="word">
-    <button type="submit">Return wird!</button>
-</form>
+<div class="container">
+<p><h1>ЕгорТранслейт</h1></p>
+<script src="/bootstrap/js/bootstrap.js"></script>
+
+    <form method="get" action="/trans/late">
+        <legend>Егор Транслейт Системс</legend>
+        <label>Введите слово</label>
+        <input class="input-large" type="text" name="word" placeholder="русское слово...">
+        <span class="help-block">Например, егор</span>
+        <label class="checkbox">
+            <input type="checkbox"> Похуй
+        </label>
+        <button type="submit" class="btn">Перевод</button>
+    </form>
 <br>
 ${wird}
+</div>
 </body>
 </html>
